@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --prime-color: #F3CC00;
+    --body-color: #423E3A;
+    --white-color: #fff;
+    --black-color: #000;
+    --big-font-family: "Proxima Nova Black";
+    --text-font-family: "Abril Fatface";
+}
+
+
+body {
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.container {
+    width: 80%;
+    height: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.date {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5%;
+    background-color: rgb(142, 84, 0);
+    width: 92px;
+    height: 200px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    line-height: 1;
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.discount {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 350px;
+    color: var(--white-color);
+    font-family: var(--text-font-family);
+
+}
+
+.discount span {
+    font-family: 'poppins';
+    font-size: 2rem;
+    position: absolute;
+}
+
+.discount span:nth-child(1) {
+    font-size: 28px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    top: 48%;
+    left: 13px;
+}
+
+.discount span:nth-child(2) {
+    font-size: 25px;
+    line-height: 15px;
+    text-transform: uppercase;
+    line-height: 5rem;
+    top: 50%;
+    left: 45%;
+    transform: translateX(-100%);
+}
+
+
+.content {
+    background-color: var(--white-color);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6%;
+    position: relative;
+}
+.content_square_img{
+    position: absolute;
+    top: 88%;
+    right: 0;
+}
+
+
+.head_text {
+    width: 100%;
+    font-size: 150px;
+    letter-spacing: 2px;
+    color: var(--text-color-2);
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: var(--big-font-family);
+    color: var(--white-color);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--black-color);
+}
+
+.sale_text{
+    width: 100%;
+    height: 130px;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    gap: 20px;
+}
+
+.sale_text h1{
+    font-size: 8rem;
+    width: 50%;
+    color: var(--prime-color) !important;
+    border: none;
+}
+
+.sale_text h2{
+    color: var(--white-color);
+    text-align: end;
+}
+.salte_text_det h2:nth-child(1) span{
+    font-size: 2rem;
+}
+.salte_text_det{
+    font-size: 1.9rem;
+}
+
+.mail_sec{
+    margin: 50px 0; 
+    width: 100%;
+    min-height: 80px;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   box-shadow: -5px 5px 50px #bdbdbd;
+   position: relative;
+}
+
+.mail_sec .input_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail_sec .input_con input{
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color:#868686 ;
+
+}
+
+.mail_sec .input_con i{
+    margin: 0 10px;
+    color:#868686 ;
+    font-size: 1.7rem;
+}
+
+.mail_sec button{
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--prime-color);
+
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 30px;
+}
+.card{
+    width: 45%;
+}
+
+.card_head{
+    width: 100%;
+    font-family: 'Poppins';
+    background-color: #F0F0F0;
+    padding: 2%;
+    font-size: 1rem;
+}
+
+.card_head h2{
+    padding-left: 2%;
+    font-weight: 600;
+}
+.card_head span{
+    padding-left: 2%;
+    font-size: 1.4rem;
+}
+
+.icon_content{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+.icon_content i{
+    font-size: 5rem;
+}
+.icon_content p{
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--text-color);
+    width: 29%;
+}
+
+.close_btn{
+    background-color: rgb(241, 241, 241);
+    width: 93px;
+    height: 49px;
+    border: 0;
+    /* font-family: "Roboto"; */
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 21px;
+    position: absolute;
+    top: -20px;
+    right: -40px;
+}
+
+.Close_container{
+    animation:animClose 3s forwards !important;
+}
+
+
+@keyframes animClose {
+    0%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    90%{
+        transform: translateX(0%);
+
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* MQ  */
+
+@media (max-width:1600px) {
+    .head_text{
+        font-size: 125px;
+    }
+
+    .content h1{
+        font-size: 7rem;
+    }
+
+    .sale_text h2{
+        font-size: 40px;
+    }
+
+    .discount{
+        font-size: 300px;
+    }
+
+    .discount span:nth-child(1) {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:1200px) {
+    .content h1{
+        font-size: 6.5rem;
+    }
+
+    .discount{
+        font-size: 220px;
+    }
+
+    .discount .upto{
+        font-size: 16px !important;
+    }
+
+    .content h1 {
+        font-size: 10.5rem;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .container{
+        height: 100%;
+        flex-direction: column-reverse;
+        padding: -10px;
+    }
+    .content{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .content_square_img{
+        top: 85%;
+    } 
+    .discount{
+        top: 75%;
+        left: 65%;
+    }
+
+    .content h1 {
+        font-size: 14vw;
+    }
+
+    .sale_text h2 {
+        font-size: 3vw;
+    }
+
+    .salte_text_det h2:nth-child(1) span {
+        font-size: 2vw;
+    }
+
+    .mail_sec .input_con input , .mail_sec button{
+        font-size: 1.6vw;
+    }
+    .mail_sec button{
+        font-size: 2.6vw;
+    }
+
+    .card_head h2{
+        font-size: 2vw;
+    }
+    .card_head span{
+        font-size: 2vw;
+    }
+    
+}
+
+
+@media (max-width:768px) {
+    .discount{
+        top: 60%;
+        left: 40%;
+    }
+    .close_btn{
+        top: -5px;
+        right: -20px;
+    }
+
+
+    .content_square_img{
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+ 
+    .discount{
+        left: 52%;
+        font-size: 10rem;
+        top: 64%;
+    }
+    .discount .upto{
+        left: -8px !important;
+    }
+ 
+    .discount span:nth-child(2){
+        left: 55%;
+        top: 40%;
+        font-size: 1.5rem;
+    }
+    body{
+        padding: 10% 2%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+    .head_text{
+        font-size: 5.1rem !important;
+        -webkit-text-stroke-width: 2px;
+    }
+    .mail_sec .input_con input{
+        font-size: 1rem;
+    }
+    .close_btn{
+        top: -20px;
+    }
+
+    .sale_text h2 {
+        font-size: 4vw;
+    }
+    .card_head h2 , .card_head span{
+        font-size: 3vw;
+    }
+
+    .sale_text h1{
+        font-size: 18vw;
+    }
+
+    .mail_sec button {
+        font-size: 4vw;
+    }
+}
